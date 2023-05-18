@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("src/img/background.webp");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("src/img/bgstars.png");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #cb1ae2;
+}
+
+.caption span.border {
+  background-color: #cb1ae2;
+  color: #fff;
+  padding: 18px;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">FIESTAS MÁGICAS</span>
+  </div>
+</div>
+
+<div style="background-color: transparent; padding: 20px;">
+  <div style="color: #777; background-color: transparent; text-align: center; padding: 50px 80px; text-align: justify; border: 5px solid black; border-radius: 10px; margin: 0 auto; max-width: 800px;">
+    <h3 style="text-align: center;">¡Lleva la magia de tu salón de fiesta a cada cliente!</h3>
+    <p>En Fiestas Mágicas, ofrecemos la plataforma perfecta para que tu salón de fiesta llegue a todos los rincones y conquiste los corazones de tus invitados.
+
+      Nuestro objetivo es conectar a los clientes con la emoción y la magia de tus eventos. A través de nuestra página web, brindamos una experiencia única que permite a tus potenciales clientes descubrir y enamorarse de lo que tu salón de fiesta tiene para ofrecer.</p>
+  </div>
+</div>
+
+
+
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #7c7979;">CREA LA INVITACIÓN PERFECTA</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Presentamos nuestro servicio de Invitaciones Personalizadas:
+    En Fiestas Mágicas, ofrecemos una característica única que permite a tus invitados crear sus propias invitaciones. Con nuestra plataforma intuitiva, podrán elegir entre una variedad de temas pre-diseñados o crear sus propios diseños personalizados. Nuestro servicio también les permite crear una lista de invitados, facilitando el envío directo de las invitaciones a los destinatarios. Di adiós a la complicación de la distribución de invitaciones tradicionales y aprovecha la comodidad y creatividad de nuestro servicio de Invitaciones Personalizadas. ¡Únete a nosotros para hacer de cada invitación una experiencia inolvidable!</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">COOL!</span>
+  </div>
+</div>
+
+
+</body></html>
